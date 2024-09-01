@@ -103,12 +103,31 @@ if (inputUserLogin == user1 || inputUserLogin == user2) {
 
 //Logika && ||
 //Bitwise binary 0101 & |
-let num1 = 12 //1100
-let num2 = 5 //1000
+// let num1 = 12 //1100
+// let num2 = 5 //1000
 
-console.log(num1 | num2)
-if (num1 & num2) {
-    console.log("Bit ke-3 Diatur")
+// console.log(num1 | num2)
+// if (num1 & num2) {
+//     console.log("Bit ke-3 Diatur")
+// }
+
+let role = 'View'//'Admin','User','View'
+
+let greeting = "Selamat Datang User";
+
+if (role == 'Admin') {
+    greeting = "Anda Admin"
 }
+
+if (role = "View") {
+    greeting = "Anda User"
+}
+
+alert(greeting)
+
+
+
+
+
 
 

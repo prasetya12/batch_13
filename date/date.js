@@ -43,13 +43,30 @@ console.log(now.toLocaleDateString());
 //PRACTICE
 
 //1.tampilkan 7 hari dari sekarang
-// const now = new Date()
+const nowDate = new Date()
+console.log(nowDate.getTime, 'halo')
+
+const sevenDayFromNow = new Date(nowDate.getTime() + 7 * 24 * 60 * 60 * 1000)
+
+// const sevenDaysNew = new Date(nowDate.getDate() + 7)
+// console.log(sevenDaysNew, 'halo')
+
 
 //2. Menghitung Selisih Waktu
-// const mulai = new Date('August 25, 2024');
-// const akhir = new Date('August 30, 2024');
+const mulai = new Date('August 25, 2024');
+const akhir = new Date('August 30, 2024');
+
+const daysDifference = (akhir - mulai)
+console.log(daysDifference / (1000 * 60 * 60 * 24))
+
 
 //3. ubah format tanggal menjadi string
+const getYear = nowDate.getFullYear()
+const getMonth = nowDate.getMonth()
+const getDate = nowDate.getDate();
+
+console.log(`tanggal : ${getDate}, bulan: ${monthName[getMonth]}, tahun: ${getYear}`)
+
 //"tanggal : 20, bulan :agustus , tahun :2024 "
 
 
