@@ -24,7 +24,82 @@ const numNew = num.map((item, index) => {
     return hasil
 })
 
-console.log(numNew)
+const numNilai = [80, 70, 50, 90, 100, 60]
+const dataSiswa = [{
+    absen: 201,
+    name: "John",
+    address: {
+        province: 'Jawa Tengah',
+        city: 'Solo'
+    }
+}, {
+    absen: 202,
+    name: "Doe",
+    address: {
+        province: 'Jawa Barat',
+        city: 'Bandung'
+    }
+}, {
+    absen: 204,
+    name: "Michael",
+    address: {
+        province: 'Jawa Timur',
+        city: 'Malang'
+    }
+}, {
+    absen: 205,
+    name: "John",
+    address: {
+        province: 'Jawa Tengah',
+        city: 'Jogja'
+    }
+}]
+
+const findJohn = dataSiswa.find((siswa) => {
+    return siswa.name == 'John'
+})
+const findNameJohn = dataSiswa.filter((siswa) => {
+    return siswa.name == 'John'
+})
+console.log(findJohn)
+console.log(findNameJohn)
+
+
+
+// const dataJohn = { absen: 201, 'nama depan': 'Johnatan', name: 'John', address: 'jogja', phone: '0812' }
+// dataJohn.lastName = "Doe"
+// dataJohn.absen = 1000
+// console.log(dataJohn)
+// console.log(dataJohn.nama depan)
+// console.log(dataJohn['nama depan'])
+
+
+// console.log(dataJohn['absen'])
+
+
+
+
+
+
+
+
+
+const kkm = 75
+
+const filterUnderKkm = numNilai.filter((nilai) => {
+    return nilai <= kkm
+})
+
+const findAbsen = dataSiswa.find((siswa) => {
+
+    return siswa.absen = 201
+})
+
+
+
+
+
+console.log(filterUnderKkm)
 
 // const otherData = ['semangka', 0, {
 //     name: 'John',
