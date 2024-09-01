@@ -1,3 +1,6 @@
+import { dataSiswa } from './data.js'
+
+console.log(dataSiswa)
 //1. Tampilkan nama dari data tersebut di Index 1 
 //Expected Result 
 //'Andi Saputra'
