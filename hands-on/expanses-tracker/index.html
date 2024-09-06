@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income and Expense Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-4">Income & Expense Tracker</h1>
+
+    <!-- Balance -->
+    <div class="mb-4 text-center">
+      <h2 class="text-lg">Current Balance</h2>
+      <p id="balance" class="text-2xl font-bold text-green-500">Rp0</p>
+    </div>
+
+    <!-- Input Form -->
+    <div class="mb-4">
+      <input
+        type="text"
+        id="descriptionInput"
+        class="border p-2 w-full rounded mb-2"
+        placeholder="Enter description"
+      />
+      <input
+        type="number"
+        id="amountInput"
+        class="border p-2 w-full rounded mb-2"
+        placeholder="Enter amount "
+      />
+    </div>
+    <!-- Buttons for Income and Expense -->
+    <div class="flex space-x-2 mb-4">
+        <button
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full"
+          onclick="addTransaction('income')"
+        >
+          Add Income
+        </button>
+        <button
+          class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-full"
+          onclick="addTransaction('expense')"
+        >
+          Add Expense
+        </button>
+      </div>
+
+    <!-- Transaction List -->
+    <h2 class="text-lg font-bold mb-2">Transaction List</h2>
+    <ul id="transactionList" class="space-y-2"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
